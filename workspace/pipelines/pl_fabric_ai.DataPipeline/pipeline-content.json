@@ -1,5 +1,62 @@
 {
   "properties": {
-    "activities": []
+    "activities": [
+      {
+        "name": "cj_test",
+        "type": "Copy",
+        "state": "Inactive",
+        "onInactiveMarkAs": "Succeeded",
+        "dependsOn": [],
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureOutput": false,
+          "secureInput": false
+        },
+        "typeProperties": {
+          "source": {
+            "type": "PostgreSqlSource",
+            "queryTimeout": "02:00:00",
+            "datasetSettings": {
+              "annotations": [],
+              "type": "PostgreSqlTable",
+              "schema": [],
+              "typeProperties": {},
+              "externalReferences": {
+                "connection": "dd8b5a0e-2676-410a-98bf-5e9303e78a74"
+              }
+            }
+          },
+          "sink": {
+            "type": "PostgreSqlSink",
+            "writeBatchSize": 50000,
+            "writeBatchTimeout": "00:02:00",
+            "writeBehavior": "insert",
+            "datasetSettings": {
+              "annotations": [],
+              "type": "PostgreSqlTable",
+              "schema": [],
+              "typeProperties": {
+                "schema": "airbyte_internal",
+                "table": "_airbyte_destination_state"
+              },
+              "externalReferences": {
+                "connection": "dd8b5a0e-2676-410a-98bf-5e9303e78a74"
+              }
+            }
+          },
+          "enableStaging": false,
+          "translator": {
+            "type": "TabularTranslator",
+            "typeConversion": true,
+            "typeConversionSettings": {
+              "allowDataTruncation": true,
+              "treatBooleanAsNumber": false
+            }
+          }
+        }
+      }
+    ]
   }
 }
