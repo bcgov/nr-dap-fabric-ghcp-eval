@@ -1,7 +1,7 @@
 # Replace this owner with the customer platform team when copying the demo.
-* @VeVarunSharma
+* @bcgov/dap-admin
 
 # Deployment and policy changes always need platform-team review.
-/.github/workflows/ @VeVarunSharma
-/scripts/ @VeVarunSharma
-/.github/copilot-instructions.md @VeVarunSharma
+/.github/workflows/ @bcgov/dap-admin
+/scripts/ @bcgov/dap-admin
+/.github/copilot-instructions.md @bcgov/dap-admin
