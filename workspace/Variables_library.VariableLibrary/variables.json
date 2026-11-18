@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/variables/1.0.0/schema.json",
+  "variables": [
+    {
+      "name": "ats_odb",
+      "note": "",
+      "type": "String",
+      "value": "27efbb9f-e2bf-434f-88da-7efd288122bc"
+    }
+  ]
+}
