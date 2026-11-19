@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/variableLibrary/definition/valueSet/1.0.0/schema.json",
+  "name": "TEST",
+  "variableOverrides": [
+    {
+      "name": "ats_odb",
+      "value": "27efbb9f-e2bf-434f-88da-7efd288122bc"
+    }
+  ]
+}
